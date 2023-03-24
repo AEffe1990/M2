@@ -327,8 +327,6 @@ div.first-container-left li {
   justify-content: space-between;
 }
 
-/* FOURTH SECTION - LEFT */
-
 .fourth-container-left {
   width: 45%;
   height: 250px;
@@ -355,8 +353,6 @@ div.first-container-left li {
   font-weight: lighter;
   line-height: 30px;
 }
-
-/* FOURTH SECTION - RIGHT */
 
 .fourth-container-right {
   width: 40%;
