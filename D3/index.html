@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function checkoutTotal(totalShoppingCart) {
+  var discount = 0.2; // Sconto del 20%
+  var shippingCost = 10; // Costo fisso della spedizione
+  var discountedTotal = totalShoppingCart * (1 - discount);
+  if (discountedTotal > 50) {
+    shippingCost = 0;
+  }
+  var total = discountedTotal + shippingCost;
+  console.log("Il totale addebitato all'utente è: " + total);
+}
+
+// Esempio
+checkoutTotal(40); // Output: Il totale addebitato all'utente è: 42
+checkoutTotal(60); // Output: Il totale addebitato all'utente è: 58
+checkoutTotal(80); // Output: Il totale addebitato all'utente è: 64
+
+    </script>
+</body>
+</html>
