@@ -74,6 +74,15 @@ console.log(numeri1);
   Scrivi del codice per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 10 (incluso), SENZA AMMETTERE DUPLICATI.
  */
 
+let array = []
+for (let i=0; i <= 10; i++) {
+ let randomNumber=parseInt(Math.random() * 10+1);
+ if (!array.ingludes(randomNumber)) {
+	 array.push(random.Number);
+	i--
+ }
+}
+
 /* ESERCIZIO 9
   Sostituisci ogni stringa contenuta in un array con un numero rappresentante la sua lunghezza.
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
