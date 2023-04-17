@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+header {
+    width: 100%;
+    min-height: 280px;
+    background: linear-gradient(127deg, rgba(143, 155, 226, 0.732) 30%, rgb(11, 175, 224) 100%);
+    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Patua One', cursive;
+}
+
+
+header>h1 {
+    font-size: 3.8em;
+}
+
+
+header>h2 {
+    font-size: 2em;
+    margin-top: 15px
+}
+
+
+#main {
+    width: 100%;
+    min-height: 900px;
+    background-color:rgba(186, 194, 241, 0.732);
+}
+
+
+#container {
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 100px;
+    background-color: rgb(72, 202, 241) ;
+}
+
+.search-form {
+    width: 30%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    font-size: .9em;
+    font-weight: 600;
+    color: rgb(14, 85, 240);
+    border-left: 25px solid rgb(14, 85, 240);
+    padding: 10px;
+}
+
+.search-form>p {
+    padding-bottom: 5px;
+}
+
+
+
+.search-space {
+    border-radius: 50px;
+    height: 100px;
+    width: 330px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 5px solid rgb(30, 245, 245);
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+.search-space::placeholder {
+    font-weight: 200;
+}
+
+
+.search-space:focus {
+    height: 100px;
+    background-color: rgb(30, 245, 245);
+    border: 0px;
+    color: black;
+    font-weight: 200;
+}
+
+/* stile bottoni */
+
+/* stile reset e show all */
+.small-button {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    border: 0px;
+    background-color: rgb(30, 245, 245);
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+/* stile search */
+#button {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 0;
+    background-color: rgb(30, 245, 245);
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+/* ombra sul bottoni mouse */
+#button:hover,
+.small-button:hover {
+    box-shadow: 0px 0px 10px rgb(30, 245, 245);
+}
+
+/* stile del nuovo div creato con js */
+#new-div {
+    width: 100%;
+    min-height: 500px;
+    margin-top: 20px;
+    padding: 20px 200px;
+}
+
+/* struttura degli elementi della listra contenenti i risultati della ricerca */
+ul>li {
+    list-style-type: none;
+    border: 2px solid white;
+    ;
+    color: black;
+    padding: 15px;
+    font-size: 1.4em;
+}
+
+/* passando con il mouse sopra gli elementi della lista il background si scurisce */
+ul>li:hover {
+    background-color: rgb(30, 245, 245);
+}
+
+/* stile di IN */
+ul>li>i {
+    color: rgb(14, 85, 240);
+
+
+}
+
+/* stile paragrafi creati con javascript che mostrano relativamente i paragrafi della ricerca nulla e il contatore dei risultati a fine elenco */
+ul>p,
+#new-div>p {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 20px;
+}
